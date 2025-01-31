@@ -1,0 +1,50 @@
+{
+   "cars": [
+     {
+       "brand": "chevrolet",
+       "models": [
+          { "id": 1, "name": "Chevrolet Equinox", "price": 18500, "imageName": "chevroletEquinox.svg" },
+          { "id": 2, "name": "Chevrolet Damas", "price": 7500, "imageName": "chevroletDamas.svg" },
+         { "id": 3, "name": "Chevrolet Malibu", "price": 35500, "imageName": "chevroletMalibu.svg" },
+         { "id": 4, "name": "Chevrolet Nexia", "price": 8500, "imageName": "chevroletNexia.svg" },
+         { "id": 5, "name": "Chevrolet Tahoe", "price": 38500, "imageName": "chevroletTahoe.svg" }
+       ]
+     },
+     {
+       "brand": "lada",
+       "models": [
+         { "id": 1, "name": "Lada", "price": 80000, "imageName": "lada.svg" },
+         { "id": 2, "name": "Lada", "price": 80000, "imageName": "lada.svg" },
+         { "id": 3, "name": "Lada", "price": 80000, "imageName": "lada.svg" },
+         { "id": 4, "name": "Lada", "price": 80000, "imageName": "lada.svg" },
+         { "id": 5, "name": "Lada", "price": 80000, "imageName": "lada.svg" }
+       ]
+     },
+     {
+       "brand": "lamborghini",
+       "models": [
+         { "id": 1, "name": "Lamborghini", "price": 90000, "imageName": "lamborghini.svg" },
+         { "id": 2, "name": "Lamborghini", "price": 90000, "imageName": "lamborghini.svg" },
+         { "id": 3, "name": "Lamborghini", "price": 90000, "imageName": "lamborghini.svg" },
+         { "id": 4, "name": "Lamborghini", "price": 90000, "imageName": "lamborghini.svg" },
+         { "id": 5, "name": "Lamborghini", "price": 90000, "imageName": "lamborghini.svg" }
+       ]
+     },
+     {
+       "brand": "ferrari",
+       "models": [
+         { "id": 1, "name": "Ferrari", "price": 85000, "imageName": "ferrari.svg" }
+       ]
+     },
+     {
+         "visibility": [
+            {"inner": "chevroletMalibuInner.svg"},
+            {"outside": "chevroletMalibuOutside.svg"}
+         ]
+     }
+   ],
+   "users": [
+     { "id": 1, "name": "Elnurbek", "role": "admin" },
+     { "id": 2, "name": "John Doe", "role": "user" }
+   ]
+}
