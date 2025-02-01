@@ -6,11 +6,11 @@ import { useTheme } from "../../contexts/ThemeContext";
 import { Link } from "react-router-dom";
 
 const Models = () => {
-  const { cars, setSelectedModel } = useData();  // setSelectedModelni olamiz
+  const { cars, setSelectedModel } = useData();
   const { theme } = useTheme();
 
   const handleModelSelect = (model) => {
-    setSelectedModel(model);  // modelni setSelectedModel orqali yangilaymiz
+    setSelectedModel(model);
   };
 
   return (
@@ -30,9 +30,9 @@ const Models = () => {
             car.models && car.models.length > 0 && (
               <Link
                 key={car.id}
-                to={`modelTypes`} // link orqali modelTypes sahifasiga o'tamiz
+                to={`modelTypes`}
                 style={{ textDecoration: "none", color: "inherit" }}
-                onClick={() => handleModelSelect(car)}  // bosilganda modelni tanlaymiz
+                onClick={() => handleModelSelect(car)}
               >
                 <Stack
                   p={"1rem"}

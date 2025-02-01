@@ -6,14 +6,14 @@ import Models from "../pages/user/Models";
 import ModelTypes from "../pages/user/ModelTypes";
 import ModelDetails from "../pages/user/ModelDetails";
 
-const UserRoutes = () => {
+const UserRoutes = ({setSelectedCar}) => {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="models" element={<Models />} />
         <Route path="models/modelTypes" element={<ModelTypes />} />
-        <Route path="models/modelTypes/modelDetails/:id" element={<ModelDetails />} />
+        <Route path="models/modelTypes/modelDetails/" element={<ModelDetails setSelectedCar={setSelectedCar} />} />
       </Route>
     </Routes>
   );

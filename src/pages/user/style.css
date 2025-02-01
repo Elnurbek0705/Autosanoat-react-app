@@ -1,0 +1,62 @@
+
+.cards p{
+   padding: 5px 0;
+}
+
+.cards p.umumiyXarajat {
+   border-top: 1px solid;
+   text-align: center;
+   padding-top: 15px !important;
+   margin-top: 10px;
+}
+
+.fullContainer {
+   position: relative;
+   margin-top: -72px !important;
+   overflow: hidden;
+   width: 100%;
+   height: 100vh;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: flex-start;
+   z-index: 1;
+}
+
+.fullContainer video {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+   z-index: -1;
+}
+
+.fullContainer .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+   color: #fff;
+   text-shadow: 5px 5px 5px #0022ff;
+   /* blur backdrop */
+   backdrop-filter: blur(1px);
+}
+
+.fullContainer .overlay h1 {
+   font-size: 3em;
+   margin-bottom: 1rem;
+}
+
+.fullContainer .overlay p {
+   font-size: 1.2em;
+   margin-bottom: 1rem;
+   line-height: 1.5;
+   text-align: center;
+
+}

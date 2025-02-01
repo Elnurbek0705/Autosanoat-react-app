@@ -3,10 +3,9 @@ import React, { createContext, useContext, useState, useMemo, useEffect } from "
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  // localStorage'dan saqlangan darkMode qiymatini olish
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const savedTheme = localStorage.getItem("isDarkMode");
-    return savedTheme ? JSON.parse(savedTheme) : false; // agar mavjud bo'lsa, uni o'qib olamiz
+    return savedTheme ? JSON.parse(savedTheme) : false;
   });
 
   const darkModeColors = useMemo(
@@ -17,6 +16,7 @@ export const ThemeProvider = ({ children }) => {
       toggleColor: '#fff',
       btnBg: '#2A85FF',
       shadow: '1px 1px 5px #4c4c4c',
+      overlayBg: '#00000099',
     }),
     []
   );
@@ -29,15 +29,15 @@ export const ThemeProvider = ({ children }) => {
       toggleColor: '#000',
       btnBg: '#2A85FF',
       shadow: '1px 1px 5px #5d5d5d',
+      overlayBg: 'rgba(255, 255, 255, 0.54)',
     }),
     []
   );
 
   const theme = isDarkMode ? darkModeColors : lightModeColors;
 
-  // isDarkMode o'zgarganda uni localStorage'ga saqlash
   useEffect(() => {
-    localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode)); // JSON formatida saqlaymiz
+    localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));
   }, [isDarkMode]);
 
   return (
