@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Modal, Typography } from "@mui/material";
+import { Box, Button, Input, Modal, Typography } from "@mui/material";
 
 const style = {
   position: "absolute",
@@ -13,12 +13,18 @@ const style = {
   p: 4,
 };
 
-const Login = ({ open, handleClose, handleSwitch }) => {
+const Login = ({ open, handleClose, handleSwitch, inputSx }) => {
   return (
     <Modal open={open} onClose={handleClose}>
       <Box sx={style}>
         <Typography variant="h6">Login</Typography>
-        <Typography sx={{ mt: 2 }}>Iltimos, tizimga kirish uchun ma'lumotlaringizni kiriting.</Typography>
+        <Typography sx={{ mt: 2 }}>
+          Iltimos, tizimga kirish uchun ma'lumotlaringizni kiriting.
+        </Typography>
+
+        <Input placeholder="Email" type="email" sx={inputSx} />
+        <Input placeholder="Parol" type="password" sx={{ ...inputSx, mt: 2 }} />
+
         <Button fullWidth variant="contained" sx={{ mt: 2 }}>
           Login
         </Button>

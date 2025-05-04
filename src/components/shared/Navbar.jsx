@@ -18,6 +18,13 @@ const Navbar = () => {
   const handleSwitch = () =>
     setModalState(modalState === "login" ? "register" : "login");
 
+  const inputStyle = {
+   "--Input-focused": 1,
+   width: "100%",
+   my: "5px", // yoki Login uchun width: 256 desangiz ham bo'ladi
+ };
+ 
+
   return (
     <>
       <Stack
@@ -48,6 +55,7 @@ const Navbar = () => {
         open={modalState === "login"}
         handleClose={handleClose}
         handleSwitch={handleSwitch}
+        inputSx={inputStyle} 
       />
 
       {/* Register modal */}
@@ -55,6 +63,7 @@ const Navbar = () => {
         open={modalState === "register"}
         handleClose={handleClose}
         handleSwitch={handleSwitch}
+        inputSx={inputStyle} 
       />
     </>
   );

@@ -1,5 +1,6 @@
-import React from "react";
-import { Box, Button, Modal, Typography } from "@mui/material";
+import React, { useState } from "react";
+import { Box, Button, Input, Modal, Typography } from "@mui/material";
+import { useAuth } from "../../contexts/AuthContext";
 
 const style = {
   position: "absolute",
@@ -13,17 +14,57 @@ const style = {
   p: 4,
 };
 
-const Register = ({ open, handleClose, handleSwitch }) => {
+const inputStyle = {
+  "--Input-focused": 1,
+  width: "100%",
+  my: "5px",
+};
+
+const Register = ({ open, handleClose, handleSwitch, inputSx = inputStyle }) => {
+  const { register } = useAuth();
+  const [form, setForm] = useState({ name: "", email: "", password: "" });
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
   return (
     <Modal open={open} onClose={handleClose}>
-      <Box sx={style}>
+      <Box
+        sx={{
+          ...style,
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Typography variant="h6">Register</Typography>
-        <Typography sx={{ mt: 2 }}>Yangi hisob yaratish uchun quyidagi ma'lumotlarni kiriting.</Typography>
-        {/* Register form qo'shish mumkin */}
+        <Typography sx={{ mt: 2 }}>
+          Yangi hisob yaratish uchun quyidagi ma'lumotlarni kiriting.
+        </Typography>
+
+        <Input required name="name" placeholder="Name" onChange={handleChange} sx={inputSx} />
+        <Input required name="email" placeholder="Email" onChange={handleChange} sx={inputSx} />
+        <Input
+          required
+          name="password"
+          placeholder="Password"
+          onChange={handleChange}
+          sx={inputSx}
+        />
+
         <Button fullWidth variant="contained" sx={{ mt: 2 }}>
           Register
         </Button>
-        <Button fullWidth sx={{ mt: 1 }} onClick={handleSwitch}>
+        <Button
+          onClick={async () => {
+            await register(form);
+            handleSwitch();
+          }}
+          fullWidth
+          sx={{ mt: 1 }}
+        >
           Already have an account? Login
         </Button>
       </Box>

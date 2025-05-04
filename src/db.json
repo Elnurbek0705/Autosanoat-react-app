@@ -1,193 +1,214 @@
 {
-   "cars": [
-     {
-       "brand": "chevrolet",
-       "models": [
-         {
-           "id": 1,
-           "name": "Chevrolet Equinox",
-           "price": 18500,
-           "imageName": "chevroletEquinox.svg",
-           "details": {
-             "tinted": "Ha",
-             "engine": "2.0",
-             "year": 2018,
-             "color": "Qora",
-             "distance": "25,000 km",
-             "gearbox": "Avtomat",
-             "description": "Mishina yaxshi holatda, yangi shinalar va moy almashgan."
-           }
-         },
-         {
-           "id": 2,
-           "name": "Chevrolet Damas",
-           "price": 7500,
-           "imageName": "chevroletDamas.svg",
-           "details": {
-             "tinted": "Yo'q",
-             "engine": "0.8",
-             "year": 2022,
-             "color": "Oq",
-             "distance": "5,000 km",
-             "gearbox": "Mexanik",
-             "description": "Ish uchun ideal transport, juda tejamkor va qulay."
-           }
-         },
-         {
-           "id": 3,
-           "name": "Chevrolet Malibu",
-           "price": 35500,
-           "imageName": "chevroletMalibu.svg",
-           "details": {
-             "tinted": "Yo'q",
-             "engine": "1.6",
-             "year": 2016,
-             "color": "Oq",
-             "distance": "3,000 km",
-             "gearbox": "Avtomat",
-             "description": "Mishina ideal holatda, 100% original bo'yoq, juda ehtiyotkorlik bilan haydalgan.",
-             "innerView": "chevroletMalibuInner.svg",
-             "outsideView": "chevroletMalibuOutside.svg"
-           }
-         },
-         {
-           "id": 4,
-           "name": "Chevrolet Nexia",
-           "price": 8500,
-           "imageName": "chevroletNexia.svg",
-           "details": {
-             "tinted": "Yo'q",
-             "engine": "1.5",
-             "year": 2021,
-             "color": "Ko'k",
-             "distance": "15,000 km",
-             "gearbox": "Mexanik",
-             "description": "Yangi holatda, salon toza, motor yaxshi ishlaydi."
-           }
-         },
-         {
-           "id": 5,
-           "name": "Chevrolet Tahoe",
-           "price": 38500,
-           "imageName": "chevroletTahoe.svg",
-           "details": {
-             "tinted": "Ha",
-             "engine": "5.3",
-             "year": 2020,
-             "color": "Qizil",
-             "distance": "40,000 km",
-             "gearbox": "Avtomat",
-             "description": "Kuchli va ishonchli SUV, barcha qulayliklarga ega."
-           }
-         }
-       ]
-     },
-     {
-       "brand": "lada",
-       "models": [
-         {
-           "id": 1,
-           "name": "Lada Vesta",
-           "price": 8000,
-           "imageName": "ladaVesta.svg",
-           "details": {
-             "tinted": "Yo'q",
-             "engine": "1.6",
-             "year": 2019,
-             "color": "Kulrang",
-             "distance": "50,000 km",
-             "gearbox": "Mexanik",
-             "description": "Arzon va ishonchli mashina, yaxshi holatda."
-           }
-         }
-       ]
-     },
-     {
-       "brand": "lamborghini",
-       "models": [
-         {
-           "id": 1,
-           "name": "Lamborghini Huracan",
-           "price": 90000,
-           "imageName": "lamborghiniHuracan.svg",
-           "details": {
-             "tinted": "Ha",
-             "engine": "5.2",
-             "year": 2021,
-             "color": "Sariq",
-             "distance": "10,000 km",
-             "gearbox": "Avtomat",
-             "description": "Juda tezkor va chiroyli supercar, yangi holatda."
-           }
-         }
-       ]
-     },
-     {
-       "brand": "ferrari",
-       "models": [
-         {
-           "id": 1,
-           "name": "Ferrari 488",
-           "price": 85000,
-           "imageName": "ferrari.svg",
-           "details": {
-             "tinted": "Ha",
-             "engine": "3.9",
-             "year": 2022,
-             "color": "Qizil",
-             "distance": "8,000 km",
-             "gearbox": "Avtomat",
-             "description": "Supercar, ideal holatda, yuqori tezlikka mo'ljallangan."
-           }
-         }
-       ]
-     }
-   ],
-   "visibility": {
-     "chevroletMalibu": {
-       "inner": "chevroletMalibuInner.svg",
-       "outside": "chevroletMalibuOutside.svg"
-     },
-     "chevroletEquinox": {
-       "inner": "chevroletEquinoxInner.svg",
-       "outside": "chevroletEquinoxOutside.svg"
-     },
-     "chevroletDamas": {
-       "inner": "chevroletDamasInner.svg",
-       "outside": "chevroletDamasOutside.svg"
-     },
-     "chevroletNexia": {
-       "inner": "chevroletNexiaInner.svg",
-       "outside": "chevroletNexiaOutside.svg"
-     },
-     "chevroletTahoe": {
-       "inner": "chevroletTahoeInner.svg",
-       "outside": "chevroletTahoeOutside.svg"
-     },
-     "ladaVesta": {
-       "inner": "ladaVestaInner.svg",
-       "outside": "ladaVestaOutside.svg"
-     },
-     "lamborghiniHuracan": {
-       "inner": "lamborghiniHuracanInner.svg",
-       "outside": "lamborghiniHuracanOutside.svg"
-     },
-     "ferrari488": {
-       "inner": "ferrari488Inner.svg",
-       "outside": "ferrari488Outside.svg"
-     }
-   },
-   "users": [
-     {
-       "id": 1,
-       "name": "Leo",
-       "role": "admin"
-     },
-     {
-       "id": 2,
-       "name": "John Doe",
-       "role": "user"
-     }
-   ]
- }
- 
+  "cars": [
+    {
+      "brand": "chevrolet",
+      "models": [
+        {
+          "id": 1,
+          "name": "Chevrolet Equinox",
+          "price": 18500,
+          "imageName": "chevroletEquinox.svg",
+          "details": {
+            "tinted": "Ha",
+            "engine": "2.0",
+            "year": 2018,
+            "color": "Qora",
+            "distance": "25,000 km",
+            "gearbox": "Avtomat",
+            "description": "Mishina yaxshi holatda, yangi shinalar va moy almashgan."
+          }
+        },
+        {
+          "id": 2,
+          "name": "Chevrolet Damas",
+          "price": 7500,
+          "imageName": "chevroletDamas.svg",
+          "details": {
+            "tinted": "Yo'q",
+            "engine": "0.8",
+            "year": 2022,
+            "color": "Oq",
+            "distance": "5,000 km",
+            "gearbox": "Mexanik",
+            "description": "Ish uchun ideal transport, juda tejamkor va qulay."
+          }
+        },
+        {
+          "id": 3,
+          "name": "Chevrolet Malibu",
+          "price": 35500,
+          "imageName": "chevroletMalibu.svg",
+          "details": {
+            "tinted": "Yo'q",
+            "engine": "1.6",
+            "year": 2016,
+            "color": "Oq",
+            "distance": "3,000 km",
+            "gearbox": "Avtomat",
+            "description": "Mishina ideal holatda, 100% original bo'yoq, juda ehtiyotkorlik bilan haydalgan.",
+            "innerView": "chevroletMalibuInner.svg",
+            "outsideView": "chevroletMalibuOutside.svg"
+          }
+        },
+        {
+          "id": 4,
+          "name": "Chevrolet Nexia",
+          "price": 8500,
+          "imageName": "chevroletNexia.svg",
+          "details": {
+            "tinted": "Yo'q",
+            "engine": "1.5",
+            "year": 2021,
+            "color": "Ko'k",
+            "distance": "15,000 km",
+            "gearbox": "Mexanik",
+            "description": "Yangi holatda, salon toza, motor yaxshi ishlaydi."
+          }
+        },
+        {
+          "id": 5,
+          "name": "Chevrolet Tahoe",
+          "price": 38500,
+          "imageName": "chevroletTahoe.svg",
+          "details": {
+            "tinted": "Ha",
+            "engine": "5.3",
+            "year": 2020,
+            "color": "Qizil",
+            "distance": "40,000 km",
+            "gearbox": "Avtomat",
+            "description": "Kuchli va ishonchli SUV, barcha qulayliklarga ega."
+          }
+        }
+      ],
+      "id": "3a72"
+    },
+    {
+      "brand": "lada",
+      "models": [
+        {
+          "id": 1,
+          "name": "Lada Vesta",
+          "price": 8000,
+          "imageName": "ladaVesta.svg",
+          "details": {
+            "tinted": "Yo'q",
+            "engine": "1.6",
+            "year": 2019,
+            "color": "Kulrang",
+            "distance": "50,000 km",
+            "gearbox": "Mexanik",
+            "description": "Arzon va ishonchli mashina, yaxshi holatda."
+          }
+        }
+      ],
+      "id": "d2e5"
+    },
+    {
+      "brand": "lamborghini",
+      "models": [
+        {
+          "id": 1,
+          "name": "Lamborghini Huracan",
+          "price": 90000,
+          "imageName": "lamborghiniHuracan.svg",
+          "details": {
+            "tinted": "Ha",
+            "engine": "5.2",
+            "year": 2021,
+            "color": "Sariq",
+            "distance": "10,000 km",
+            "gearbox": "Avtomat",
+            "description": "Juda tezkor va chiroyli supercar, yangi holatda."
+          }
+        }
+      ],
+      "id": "a026"
+    },
+    {
+      "brand": "ferrari",
+      "models": [
+        {
+          "id": 1,
+          "name": "Ferrari 488",
+          "price": 85000,
+          "imageName": "ferrari.svg",
+          "details": {
+            "tinted": "Ha",
+            "engine": "3.9",
+            "year": 2022,
+            "color": "Qizil",
+            "distance": "8,000 km",
+            "gearbox": "Avtomat",
+            "description": "Supercar, ideal holatda, yuqori tezlikka mo'ljallangan."
+          }
+        }
+      ],
+      "id": "a79e"
+    }
+  ],
+  "visibility": {
+    "chevroletMalibu": {
+      "inner": "chevroletMalibuInner.svg",
+      "outside": "chevroletMalibuOutside.svg"
+    },
+    "chevroletEquinox": {
+      "inner": "chevroletEquinoxInner.svg",
+      "outside": "chevroletEquinoxOutside.svg"
+    },
+    "chevroletDamas": {
+      "inner": "chevroletDamasInner.svg",
+      "outside": "chevroletDamasOutside.svg"
+    },
+    "chevroletNexia": {
+      "inner": "chevroletNexiaInner.svg",
+      "outside": "chevroletNexiaOutside.svg"
+    },
+    "chevroletTahoe": {
+      "inner": "chevroletTahoeInner.svg",
+      "outside": "chevroletTahoeOutside.svg"
+    },
+    "ladaVesta": {
+      "inner": "ladaVestaInner.svg",
+      "outside": "ladaVestaOutside.svg"
+    },
+    "lamborghiniHuracan": {
+      "inner": "lamborghiniHuracanInner.svg",
+      "outside": "lamborghiniHuracanOutside.svg"
+    },
+    "ferrari488": {
+      "inner": "ferrari488Inner.svg",
+      "outside": "ferrari488Outside.svg"
+    }
+  },
+  "users": [
+    {
+      "id": "1",
+      "name": "Leo",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "John Doe",
+      "role": "user"
+    },
+    {
+      "id": "1c3f",
+      "name": "elnurbek",
+      "email": "elnurbek0705@gmail.com",
+      "password": "21FDEuPCURDwsY"
+    },
+    {
+      "id": "ba67",
+      "name": "dwasadwq",
+      "email": "legenda@gmail.com",
+      "password": "21FDEuPCURDwsY"
+    },
+    {
+      "id": "dbf5",
+      "name": "dwasadwq",
+      "email": "legenda@gmail.com",
+      "password": "21FDEuPCURDwsY"
+    }
+  ]
+}
